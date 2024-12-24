@@ -21,8 +21,8 @@ inventory = ./aws_ec2.yml
 
 ```
 ```
-**aws_ec2.yml : contains the aws dynamic variables such as tags , filters and etc
-main.yml: contains actuall playbook**
+aws_ec2.yml : contains the aws dynamic variables such as tags , filters and etc
+main.yml: contains actuall playbook
 
 ```
 **Running the playbook** :
