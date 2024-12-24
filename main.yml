@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+
+    - name: running below tasks
+      shell : free -h
+      register: space
+
+    - name: printing the space
+      debug:
+        msg: "{{ space.stdout_lines }}"

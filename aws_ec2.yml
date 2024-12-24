@@ -1,0 +1,10 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-1  # Specify the region
+filters:
+  "tag:env": "test"
+keyed_groups:
+  - key: tags.Name  # Group instances based on Name tag
+  - key: instance_type  # Group by instance type
+hostnames:
+  - ip-address  # Use the Name tag as the hostname
